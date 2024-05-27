@@ -1,0 +1,26 @@
+{
+  "name": "qa_practice_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:setup": "npx playwright test Insert_Update_UserProfile_GraphQL.spec.js",
+    "test:main": "npx playwright test Complete_Profile.spec.js",
+    "test:sign": "npx playwright test Sign_In_Get_Member_Profile.spec.js",
+    "test:all": "npm run test:setup && npm run test:main && npm run test:sign"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.10"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "chance": "^1.1.11",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
+    "xlsx": "^0.18.5"
+  }
+}
